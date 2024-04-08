@@ -1,13 +1,18 @@
+
+/* This will bold the "Title" of a Label field. */
 [dir] .nx-theme-styles .nx-theme-form ntx-richtext-label span.nx-title.ng-star-inserted {
     font-weight: bold;
 }
 
+/* This removes the Delete button on the first row of a Repeating Section. */
 [dir] .nx-theme-styles .nx-theme-form ntx-repeating-section .ntx-repeating-section-repeated-section:first-child .ntx-repeating-section-overlay {
     visibility: hidden;
     padding: 0px;
     margin: 0px 0px 0px 0px;    
 }
 
+/* Section below copied from Jake Dennison repo: https://github.com/JSDenintex/JSDenintex.github.io/blob/main/src/css/compactRS.css */
+/* Intention with this is to center the Delete button on the row, rather than have it on a separate line above the form controls. */
 .ntx-repeating-section-repeated-section {
     display: flex; /* Activates flexbox layout */
     align-items: center; /* Centers items vertically */
@@ -28,6 +33,6 @@ ntx-repeating-section .row>* {
 .nx-repeating-section-container .nx-repeating-section-body .ntx-repeating-section-overlay {
     flex-shrink: 0; /* Prevent shrinking */
     margin-left: auto; /* Pushes the delete button to the end of the container */
-    /* align-self: flex-start; /* Aligns delete button to the top */
+    /* align-self: flex-start; /* Aligns delete button to the top, commented out to align closer to center. */
     padding: 5px; 
 }
